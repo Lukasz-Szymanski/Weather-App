@@ -50,7 +50,34 @@
 }
 
 .weather-info{
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem auto;
+    width: 30vw;
     height: fit-content;
-    margin-top: 20rem;
+    background-color: var(--Color3);
+}
+
+.weather-info div, 
+.weather-info img {
+    background-color: var(--Color3);
+}
+
+.city-name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.temp {
+    margin: 20px;
+}
+
+.condition {
+    margin: 20px;
+}
+
+.weather-info img {
+    width: 10rem;
+
 }
