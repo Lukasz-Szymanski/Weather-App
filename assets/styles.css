@@ -105,3 +105,6 @@ tr img {
     background-color: var(--Color3);
 }
 
+#weather-table {
+    display: none;
+}
