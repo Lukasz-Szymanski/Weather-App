@@ -17,13 +17,15 @@
 
 
 .main-container {
-    width: 80vw;
-    height: 80vh;
+    max-width: 40vw;
+    height: 90vh;
     background-color: var(--Color3);
-    margin: 5rem auto;
+    margin: 2rem auto;
     border-radius: 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 .weather-form {
@@ -53,9 +55,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 5rem auto;
-    width: 30vw;
-    height: fit-content;
+    margin-top: 5rem;
     background-color: var(--Color3);
 }
 
@@ -65,19 +65,43 @@
 }
 
 .city-name {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .temp {
-    margin: 20px;
+    margin: 10px;
 }
 
 .condition {
-    margin: 20px;
+    margin: 10px;
 }
 
 .weather-info img {
-    width: 10rem;
-
+    width: 5rem;
 }
+
+
+/* Table style */
+
+table, thead, tr, th, tbody, td{
+    background-color: var(--Color3);
+}   
+
+thead th{
+    width: 10vw;
+}
+
+tbody {
+    max-height: 30vh;
+    overflow-y: auto;
+}
+tr td {
+    text-align: center;
+    width: 100px;
+}
+
+tr img {
+    background-color: var(--Color3);
+}
+
