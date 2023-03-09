@@ -20,7 +20,11 @@
           id="city"
           name="city"
           placeholder="Enter city name:"
+          required
+          list="cities-list"
+          required
         />
+        <datalist id="cities-list"></datalist>
         <button type="submit" id="get-weather">Submit</button>
       </form>
       <div class="weather-info">
@@ -34,12 +38,18 @@
       <table id="forecast" class="forecast">
         <thead id="weather-table">
           <tr>
-            <th>Date</th>
+            <!-- <th>Date</th>
             <th>Temperature</th>
-            <th>Conditions</th>
+            <th>Conditions</th> -->
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td id="date-0"></td>
+            <td id="temp-0"></td>
+            <td id="condition-0"></td>
+            <td><img id="icon-0" src="" alt="" /></td>
+          </tr>
           <tr>
             <td id="date-1"></td>
             <td id="temp-1"></td>
