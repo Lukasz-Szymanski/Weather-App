@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="./src/style/styles.css">
-    <link rel="shortcut icon" href="./src/assets/favicon_io/favicon.ico"   type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="main-container">
-        <form class="weather-form">
-            <input type="text" id="city" name="city" placeholder="Enter city name:">
-            <button type="submit" id="get-weather">Submit</button>
-        </form>
-        <div class="weather-info">
-            <div class="city-name" id="city-name"></div>
-            <div class="temp" id="temp"></div>
-            <div class="condition" id="condition"></div>
-            <img src="" alt="" id="icon">
-        </div>
-            
-            <!-- Weather for 7 days -->
-            <table id="forecast" class="forecast">
-                <thead id="weather-table">
-                    <tr>
-                        <th>Date</th>
-                        <th>Temperature</th>
-                        <th>Conditions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="date-1"></td>
-                        <td id="temp-1"></td>
-                        <td id="condition-1"></td>
-                        <td><img id="icon-1" src="" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td id="date-2"></td>
-                        <td id="temp-2"></td>
-                        <td id="condition-2"></td>
-                        <td><img id="icon-2" src="" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td id="date-3"></td>
-                        <td id="temp-3"></td>
-                        <td id="condition-3"></td>
-                        <td><img id="icon-3" src="" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td id="date-4"></td>
-                        <td id="temp-4"></td>
-                        <td id="condition-4"></td>
-                        <td><img id="icon-4" src="" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td id="date-5"></td>
-                        <td id="temp-5"></td>
-                        <td id="condition-5"></td>
-                        <td><img id="icon-5" src="" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td id="date-6"></td>
-                        <td id="temp-6"></td>
-                        <td id="condition-6"></td>
-                        <td><img id="icon-6" src="" alt=""></td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            
-        </div>
-        
+      <form class="weather-form">
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Enter city name:"
+        />
+        <button type="submit" id="get-weather">Submit</button>
+      </form>
+      <div class="weather-info">
+        <div class="city-name" id="city-name"></div>
+        <div class="temp" id="temp"></div>
+        <div class="condition" id="condition"></div>
+        <img src="" alt="" id="icon" />
+      </div>
 
+      <!-- Weather for 7 days -->
+      <table id="forecast" class="forecast">
+        <thead id="weather-table">
+          <tr>
+            <th>Date</th>
+            <th>Temperature</th>
+            <th>Conditions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="date-1"></td>
+            <td id="temp-1"></td>
+            <td id="condition-1"></td>
+            <td><img id="icon-1" src="" alt="" /></td>
+          </tr>
+          <tr>
+            <td id="date-2"></td>
+            <td id="temp-2"></td>
+            <td id="condition-2"></td>
+            <td><img id="icon-2" src="" alt="" /></td>
+          </tr>
+          <tr>
+            <td id="date-3"></td>
+            <td id="temp-3"></td>
+            <td id="condition-3"></td>
+            <td><img id="icon-3" src="" alt="" /></td>
+          </tr>
+          <tr>
+            <td id="date-4"></td>
+            <td id="temp-4"></td>
+            <td id="condition-4"></td>
+            <td><img id="icon-4" src="" alt="" /></td>
+          </tr>
+          <tr>
+            <td id="date-5"></td>
+            <td id="temp-5"></td>
+            <td id="condition-5"></td>
+            <td><img id="icon-5" src="" alt="" /></td>
+          </tr>
+          <tr>
+            <td id="date-6"></td>
+            <td id="temp-6"></td>
+            <td id="condition-6"></td>
+            <td><img id="icon-6" src="" alt="" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-
-    <script src="./src/script/script.js"></script>
-</body>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
