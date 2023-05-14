@@ -17,4 +17,4 @@ A weather application that uses weatherapi.com to display current weather inform
 * WeatherApi
 
 #
-Live demo: https://siemabrokul.github.io/Weather-App/
+Live demo: https://lukasz-szymanski.github.io/Weather-App/
